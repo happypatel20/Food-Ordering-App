@@ -1,0 +1,29 @@
+{
+  "name": "reactapp",
+  "version": "1.0.0",
+  "description": "react first app",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://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@github.com/happypatel20/react-learning.git"
+  },
+  "author": "Happy",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/happypatel20/react-learning/issues"
+  },
+  "homepage": "https://github.com/happypatel20/react-learning#readme",
+  "devDependencies": {
+    "parcel": "^2.8.3",
+    "process": "^0.11.10"
+  },
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "browserslist": [
+    "last 2 version"
+  ]
+}
