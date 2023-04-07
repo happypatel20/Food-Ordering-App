@@ -76,6 +76,8 @@ body{
   border-radius: 5px;
   padding: 2px 4px;
   font-size: 14px;
+  min-width: 28px;
+  text-align: center;
 }
 .search_filter{
   margin: 0 0 20px 0;
