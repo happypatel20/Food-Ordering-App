@@ -48,6 +48,8 @@ body {
   border-radius: 10px;
   cursor: pointer;
   transition: 0.3s ease-in-out;
+  color: #000;
+  text-decoration: none;
 }
 .restro_card:hover {
   transform: translateY(-6px);

@@ -3,7 +3,7 @@ const RestroCard = (props) => {
   const { name, avgRating, cuisines, address, cloudinaryImageId } =
     props.restroData.data;
   return (
-    <div className="restro_card">
+    <div className="">
       <img className="restro_card-img" src={IMG_URL + cloudinaryImageId} />
       <div className="restro_card-heading">
         <h2>{name}</h2>

@@ -2,11 +2,12 @@ import restroList from "../utils/mockData";
 import RestroCard from "./RestroCard";
 import { useState , useEffect} from "react";
 import Shimmer from "./Shimmer";
+import { Link } from "react-router-dom";
 
 const RestroContainer = () => {
 const [listOfRestro, setListOfRestro] = useState([])
 const [filteredList, setfilteredList] = useState([])
-const [searchValue, setSearchValue] = useState([])
+const [searchValue, setSearchValue] = useState("")
 
 useEffect(()=>{
   fetchData()
@@ -26,8 +27,8 @@ const fetchData = async () => {
         }} value={searchValue}></input>
 
         <button className="search_btn" onClick={() => {
-          const searchFilterData = listOfRestro.filter(res => res.data.name.toLowerCase().includes(searchValue.toLowerCase()))
-          setfilteredList(searchFilterData)
+            const searchFilterData = listOfRestro.filter(res => res.data.name.toLowerCase().includes(searchValue.toLowerCase()))
+            setfilteredList(searchFilterData)
         }}>Search</button>
 
           <button
@@ -45,7 +46,7 @@ const fetchData = async () => {
           filteredList.length == 0 && Array(10).fill('').map((e, index) => (<Shimmer key={index} />))
         }
         {filteredList.map((restaurant) => (
-          <RestroCard key={restaurant.data.id} restroData={restaurant} />
+         <Link className="restro_card" to={/restaurants/+restaurant.data.id} key={restaurant.data.id}> <RestroCard restroData={restaurant} /></Link>
         ))}
       </div>
     </div>
