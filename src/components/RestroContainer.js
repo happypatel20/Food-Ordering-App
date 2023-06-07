@@ -33,8 +33,8 @@ const fetchData = async () => {
           <button
             className="search_btn"
             onClick={() => {
-            const filtredRestro = listOfRestro.filter(res => res.data.avgRating > 4)
-              setListOfRestro(filtredRestro)
+            const filtredRestro = filteredList.filter(res => res.data.avgRating > 4)
+              setfilteredList(filtredRestro)
             }}
           >
             Top Rated
