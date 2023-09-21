@@ -137,3 +137,11 @@ body {
     background-position: 1000px 0;
   }
 }
+
+
+.user-card{
+  padding: 12px;
+  box-shadow: 1px 1px 20px #ccc;
+  border-radius: 10px;
+  margin-top: 15px;
+}

@@ -1,7 +1,7 @@
 import { IMG_URL } from "../utils/constant";
 const RestroCard = (props) => {
   const { name, avgRating, cuisines, address, cloudinaryImageId } =
-    props.restroData.data;
+    props.restroData.info;
   return (
     <div className="">
       <img className="restro_card-img" src={IMG_URL + cloudinaryImageId} />
