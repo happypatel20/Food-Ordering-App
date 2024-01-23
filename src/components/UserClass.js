@@ -26,7 +26,7 @@ class UserClass extends Component{
     const {count} = this.state
     const{name, login} = this.state.userInfo
     return(
-      <div className="user-card">
+      <div className="shadow-md shadow-black-50 rounded-md p-3">
         <h1>Count: {count}</h1>
         <button onClick={() => {
           this.setState({
