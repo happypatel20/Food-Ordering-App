@@ -4,9 +4,9 @@
   "version": "1.0.0",
   "description": "react first app",
   "scripts": {
-    "start": "parcel index.html",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build",
+    "start": "parcel index.html",
     "build": "parcel build index.html",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
