@@ -1,9 +1,12 @@
 {
   "name": "reactapp",
+  "homepage": "https://happypatel20.github.io/Food-Ordering-App/",
   "version": "1.0.0",
   "description": "react first app",
   "scripts": {
     "start": "parcel index.html",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "build": "parcel build index.html",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -16,8 +19,8 @@
   "bugs": {
     "url": "https://github.com/happypatel20/react-learning/issues"
   },
-  "homepage": "https://github.com/happypatel20/react-learning#readme",
   "devDependencies": {
+    "gh-pages": "^6.1.1",
     "parcel": "^2.8.3",
     "postcss": "^8.4.30",
     "process": "^0.11.10",
